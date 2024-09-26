@@ -62,14 +62,19 @@ Antes de rodar o projeto, certifique-se de ter os seguintes itens instalados:
     ```bash
     php artisan migrate
     ```
+8. **Executar Seeders para Dados de Exemplo**
 
-8. **Gerar a Documentação Swagger**
+    ```bash
+    php artisan db:seed
+    ```
+
+9. **Gerar a Documentação Swagger**
 
     ```bash
     php artisan l5-swagger:generate
     ```
 
-9. **Acesse a Aplicação**
+10. **Acesse a Aplicação**
 
     - **API Listar Contratos:** `http://localhost:8000/api/contratos` (GET)
     - **API Cadastrar Contrato:** `http://localhost:8000/api/contratos` (POST)
@@ -112,20 +117,25 @@ Antes de rodar o projeto, certifique-se de ter os seguintes itens instalados:
     ```bash
     php artisan migrate
     ```
+7. **Executar Seeders para Dados de Exemplo**
 
-7. **Gerar a Documentação Swagger**
+    ```bash
+    php artisan db:seed
+    ```
+
+8. **Gerar a Documentação Swagger**
 
     ```bash
     php artisan l5-swagger:generate
     ```
 
-8. **Inicie o Servidor de Desenvolvimento**
+9. **Inicie o Servidor de Desenvolvimento**
 
     ```bash
    docker-compose exec app php artisan serve --host=0.0.0.0 --port=8000
     ```
 
-9. **Acesse a Aplicação**
+10. **Acesse a Aplicação**
 
     - **API Listar Contratos:** `http://localhost:8000/api/contratos` (GET)
     - **API Cadastrar Contrato:** `http://localhost:8000/api/contratos` (POST)
