@@ -12,10 +12,10 @@ class CreateTbConvenioTable extends Migration
             $table->string('codigo')->primary();
             $table->string('convenio');
             $table->decimal('verba', 10, 2);
-            $table->string('banco'); 
-            $table->timestamps();
+            $table->string('banco');
 
             $table->foreign('banco')->references('codigo')->on('tb_banco')->onDelete('cascade');
+            $table->timestamps();
         });
     }
 
