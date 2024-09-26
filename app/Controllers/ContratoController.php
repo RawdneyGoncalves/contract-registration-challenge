@@ -32,6 +32,7 @@ class ContratoController extends BaseController
      *     @OA\Response(response="404", description="Contratos não encontrados"),
      * )
      */
+
     public function index(): JsonResponse
     {
         $contratos = $this->listarContratosUseCase->execute();

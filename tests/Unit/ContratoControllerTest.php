@@ -20,7 +20,7 @@ class ContratoControllerTest extends TestCase
                 'nome_banco' => 'Banco A',
                 'verba' => 10000,
                 'codigo_contrato' => 1,
-                'data_inclusao' => '2023-01-01',
+                'data_inclusao' => '2024-09-27',
                 'valor' => 5000,
                 'prazo' => 12,
             ],
