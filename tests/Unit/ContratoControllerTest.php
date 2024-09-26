@@ -64,13 +64,8 @@ class ContratoControllerTest extends TestCase
             'convenio_servico' => 1, 
         ];
 
-        $criarContratoUseCaseMock->method('execute')->with($dadosContrato)->willReturn((object)[
-            'codigo' => 1,
-            'prazo' => 12,
-            'valor' => 5000.00,
-            'data_inclusao' => '2023-01-01',
-            'convenio_servico' => 1,
-        ]);
+        $criarContratoUseCaseMock->method('execute')->with($dadosContrato)->willReturn(1);
+
     
         /** @var ListarContratosUseCase|MockObject $listarContratosUseCaseMock */
         $listarContratosUseCaseMock = $this->createMock(ListarContratosUseCase::class);
