@@ -1,9 +1,12 @@
 <?php
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContratoController;
 
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+Route::get('/contratos', [ContratoController::class, 'index']);
+Route::post('/contratos', [ContratoController::class, 'store']);
+
+Route::get('/test', function () {
+    return response()->json(['message' => 'Hello World']);
 });

@@ -6,6 +6,11 @@ use Illuminate\Support\Facades\DB;
 
 class ContratoRepository
 {
+    /**
+     * Lista todos os contratos com os detalhes necessários.
+     *
+     * @return \Illuminate\Support\Collection
+     */
     public function listarContratos()
     {
         return DB::table('tb_contrato')
@@ -20,7 +25,24 @@ class ContratoRepository
                 'tb_contrato.valor as valor',
                 'tb_contrato.prazo as prazo'
             )
-            ->groupBy('tb_banco.nome', 'tb_convenio.verba', 'tb_contrato.codigo', 'tb_contrato.data_inclusao', 'tb_contrato.valor', 'tb_contrato.prazo')
             ->get();
+    }
+
+    /**
+     * Cria um novo contrato.
+     *
+     * @param array $data
+     * @return int
+     */
+    public function criarContrato(array $data)
+    {
+        return DB::table('tb_contrato')->insertGetId([
+            'prazo' => $data['prazo'],
+            'valor' => $data['valor'],
+            'data_inclusao' => $data['data_inclusao'],
+            'convenio_servico' => $data['convenio_servico'],
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
     }
 }

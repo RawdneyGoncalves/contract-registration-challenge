@@ -14,6 +14,9 @@ class CreateTbContratoTable extends Migration
             $table->decimal('valor', 10, 2);
             $table->date('data_inclusao');
             $table->unsignedBigInteger('convenio_servico'); 
+
+            $table->foreign('convenio_servico')->references('codigo')->on('tb_convenio_servico')->onDelete('cascade');
+
             $table->timestamps();
         });
     }

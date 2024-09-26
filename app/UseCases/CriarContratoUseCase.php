@@ -4,7 +4,7 @@ namespace App\UseCases;
 
 use App\Repositories\ContratoRepository;
 
-class ListarContratosUseCase
+class CriarContratoUseCase
 {
     private $contratoRepository;
 
@@ -15,10 +15,11 @@ class ListarContratosUseCase
 
     /**
      *
-     * @return \Illuminate\Support\Collection
+     * @param array $data
+     * @return int
      */
-    public function execute()
+    public function execute(array $data)
     {
-        return $this->contratoRepository->listarContratos();
+        return $this->contratoRepository->criarContrato($data);
     }
 }

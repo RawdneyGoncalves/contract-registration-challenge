@@ -18,18 +18,18 @@ class ListarContratosUseCaseTest extends TestCase
         $contratosMock = new Collection([
             (object)[
                 'nome_banco' => 'Banco A',
-                'verba' => 10000,
+                'verba' => 10000.00,
                 'codigo_contrato' => 1,
                 'data_inclusao' => '2023-01-01',
-                'valor' => 5000,
+                'valor' => 5000.00,
                 'prazo' => 12,
             ],
             (object)[
                 'nome_banco' => 'Banco B',
-                'verba' => 20000,
+                'verba' => 20000.00,
                 'codigo_contrato' => 2,
                 'data_inclusao' => '2023-02-01',
-                'valor' => 15000,
+                'valor' => 15000.00,
                 'prazo' => 24,
             ],
         ]);
@@ -42,7 +42,10 @@ class ListarContratosUseCaseTest extends TestCase
 
         $this->assertCount(2, $result);
         $this->assertEquals('Banco A', $result[0]->nome_banco);
-        $this->assertEquals(10000, $result[0]->verba);
+        $this->assertEquals(10000.00, $result[0]->verba);
         $this->assertEquals(1, $result[0]->codigo_contrato);
+        $this->assertEquals('Banco B', $result[1]->nome_banco);
+        $this->assertEquals(20000.00, $result[1]->verba);
+        $this->assertEquals(2, $result[1]->codigo_contrato);
     }
 }
