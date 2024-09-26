@@ -1,0 +1,30 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "API de Contratos",
+        "description": "API para gerenciamento de contratos.",
+        "version": "1.0"
+    },
+    "servers": [
+        {
+            "url": "http://localhost:8000"
+        }
+    ],
+    "paths": {
+        "/contratos": {
+            "get": {
+                "summary": "Listar contratos",
+                "description": "Retorna uma lista de contratos.",
+                "operationId": "e502ed839696b9f8b6e47945e7bb16fd",
+                "responses": {
+                    "200": {
+                        "description": "Lista de contratos retornada com sucesso"
+                    },
+                    "404": {
+                        "description": "Contratos não encontrados"
+                    }
+                }
+            }
+        }
+    }
+}
