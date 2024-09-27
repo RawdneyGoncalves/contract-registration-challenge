@@ -1,0 +1,48 @@
+2024-09-27 01:25:35,384 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-09-27 01:25:35,387 INFO supervisord started with pid 1
+2024-09-27 01:25:36,391 INFO spawned: 'php-fpm' with pid 10
+2024-09-27 01:25:37,394 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-09-27 01:25:37,507 WARN exited: php-fpm (exit status 78; not expected)
+2024-09-27 01:25:38,511 INFO spawned: 'php-fpm' with pid 11
+2024-09-27 01:25:38,694 WARN exited: php-fpm (exit status 78; not expected)
+2024-09-27 01:25:39,698 INFO spawned: 'php-fpm' with pid 12
+2024-09-27 01:25:39,888 WARN exited: php-fpm (exit status 78; not expected)
+2024-09-27 01:25:41,894 INFO spawned: 'php-fpm' with pid 13
+2024-09-27 01:25:41,998 WARN exited: php-fpm (exit status 78; not expected)
+2024-09-27 01:25:45,003 INFO spawned: 'php-fpm' with pid 14
+2024-09-27 01:25:45,072 WARN exited: php-fpm (exit status 78; not expected)
+2024-09-27 01:25:46,073 INFO gave up: php-fpm entered FATAL state, too many start retries too quickly
+2024-09-27 01:27:52,547 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-09-27 01:27:52,582 INFO supervisord started with pid 1
+2024-09-27 01:27:53,585 INFO spawned: 'php-fpm' with pid 10
+2024-09-27 01:27:53,686 WARN exited: php-fpm (exit status 78; not expected)
+2024-09-27 01:27:54,690 INFO spawned: 'php-fpm' with pid 11
+2024-09-27 01:27:54,774 WARN exited: php-fpm (exit status 78; not expected)
+2024-09-27 01:27:56,779 INFO spawned: 'php-fpm' with pid 12
+2024-09-27 01:27:56,855 WARN exited: php-fpm (exit status 78; not expected)
+2024-09-27 01:27:59,861 INFO spawned: 'php-fpm' with pid 13
+2024-09-27 01:27:59,942 WARN exited: php-fpm (exit status 78; not expected)
+2024-09-27 01:28:00,944 INFO gave up: php-fpm entered FATAL state, too many start retries too quickly
+2024-09-27 01:29:41,058 WARN received SIGINT indicating exit request
+2024-09-27 01:42:53,058 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-09-27 01:42:53,064 INFO supervisord started with pid 1
+2024-09-27 01:42:54,068 INFO spawned: 'php-fpm' with pid 10
+2024-09-27 01:42:54,158 WARN exited: php-fpm (exit status 78; not expected)
+2024-09-27 01:42:55,162 INFO spawned: 'php-fpm' with pid 11
+2024-09-27 01:42:55,245 WARN exited: php-fpm (exit status 78; not expected)
+2024-09-27 01:42:57,249 INFO spawned: 'php-fpm' with pid 12
+2024-09-27 01:42:57,318 WARN exited: php-fpm (exit status 78; not expected)
+2024-09-27 01:43:00,323 INFO spawned: 'php-fpm' with pid 13
+2024-09-27 01:43:00,392 WARN exited: php-fpm (exit status 78; not expected)
+2024-09-27 01:43:01,394 INFO gave up: php-fpm entered FATAL state, too many start retries too quickly
+2024-09-27 01:51:02,038 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-09-27 01:51:02,042 INFO supervisord started with pid 1
+2024-09-27 01:51:03,046 INFO spawned: 'php-fpm' with pid 10
+2024-09-27 01:51:03,221 WARN exited: php-fpm (exit status 78; not expected)
+2024-09-27 01:51:04,225 INFO spawned: 'php-fpm' with pid 11
+2024-09-27 01:51:04,603 WARN exited: php-fpm (exit status 78; not expected)
+2024-09-27 01:51:06,607 INFO spawned: 'php-fpm' with pid 12
+2024-09-27 01:51:06,715 WARN exited: php-fpm (exit status 78; not expected)
+2024-09-27 01:51:09,721 INFO spawned: 'php-fpm' with pid 13
+2024-09-27 01:51:09,788 WARN exited: php-fpm (exit status 78; not expected)
+2024-09-27 01:51:10,790 INFO gave up: php-fpm entered FATAL state, too many start retries too quickly
